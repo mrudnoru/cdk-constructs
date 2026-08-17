@@ -1,0 +1,26 @@
+{
+  "name": "@marmaid/cdk-constructs",
+  "version": "0.1.0",
+  "description": "Shared CDK constructs for marmaid projects",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run --passWithNoTests",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": ">=2.173.0 <3.0.0",
+    "constructs": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "aws-cdk-lib": "^2.200.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
